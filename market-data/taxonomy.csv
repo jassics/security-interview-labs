@@ -1,0 +1,26 @@
+skill_id,label,book_chapter,what_it_means
+appsec_owasp,Web and API vulnerability classes (OWASP),2-3,Knows injection / authz / SSRF / deserialization classes and their fixes
+threat_modeling,Threat modeling,9,Runs STRIDE-style or data-flow threat modeling on a design
+code_review,Secure code review,4,Reads code to find and fix vulnerabilities by hand
+sast_dast_sca,SAST / DAST / SCA tooling,4/7,Operates or builds scanners and triages their output
+secure_sdlc,Secure SDLC and paved roads,8,Embeds security in the development lifecycle; guardrails; champions
+ci_cd_pipeline,CI/CD pipeline security,7,Secures build and deploy pipelines and gates
+supply_chain,Software supply chain,7,Dependencies SBOM provenance secrets in repos
+cloud_security,Cloud security,5,IAM network and config security on AWS/GCP/Azure
+k8s_containers,Containers and Kubernetes,6,Cluster and image hardening RBAC network policy
+iam_authn,Identity authn and authz,3/10,OAuth SAML SSO authorization models secrets management
+mobile_security,Mobile security,2,Android and iOS app security testing
+pentest_redteam,Pentest and red teaming,2/12,Offensive testing of apps or infrastructure
+detection_response,Detection and incident response,5,Detections alerts triage incident handling
+crypto,Applied cryptography,1,Correct use of crypto primitives and key management
+ai_llm_security,AI and LLM security,11,Prompt injection RAG agent risks AI-assisted security work
+security_architecture,Security architecture and design review,10,Reviews or defines secure designs across systems
+automation_tooling,Security automation and tooling,12,Writes code to scale security work
+compliance_grc,Compliance and GRC,10,SOC 2 ISO 27001 GDPR regulatory mapping
+vuln_management,Vulnerability management,7,Prioritises and drives remediation of findings
+bug_bounty,Bug bounty and security research,2,Runs triages or participates in bug bounty or CTFs
+native_embedded,Native code and embedded,2,C/C++ memory safety OS and firmware level security
+leadership,Leadership and mentoring,10,Leads a team or program or mentors engineers
+lang_python,Python,12,Python named as a working language
+lang_java,Java,12,Java named as a working language
+lang_go,Go,12,Go named as a working language

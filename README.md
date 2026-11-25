@@ -13,6 +13,7 @@ Every exercise has a vulnerable version, one fix, and a test that proves the exp
 | --- | --- | --- |
 | [`product-security/`](product-security) | Spot-the-vuln in Python, Java and JavaScript; coding round problems, including basic to medium warm-ups in the style of LeetCode and HackerEarth | Pilot: 6 spot-the-vuln and coding exercises, 8 warm-ups |
 | [`ai-security/`](ai-security) | Labs for LLM, agent, RAG and model supply chain security | Planned |
+| [`market-data/`](market-data) | Dated dataset of public security job postings and pay ranges for 16 target companies, with a refresh method | Snapshot: 25 Nov 2026, 79 postings |
 
 This repository is the full collection. The companion books (Product Security Interview Playbook and AI Security Playbook) use a smaller, curated selection and point here for the rest.
 
