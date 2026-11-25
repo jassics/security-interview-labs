@@ -17,7 +17,9 @@ SOURCE_TYPES = {"official", "mirror"}
 FAMILIES = {"product_security", "cloud_infra_security", "detection_response", "security_tooling",
             "offensive", "leadership_grc", "other_security"}
 REQUESTED_COMPANIES = {"Flipkart", "Amazon", "Stripe", "eBay", "Rippling", "Sarvam AI", "Anthropic", "Coupang",
-                       "Meesho", "PhonePe", "Walmart", "Harness", "Avalara", "Meta", "Circle", "Wind River"}
+                       "Meesho", "PhonePe", "Walmart", "Harness", "Avalara", "Meta", "Circle", "Wind River",
+                       "Razorpay", "Slice", "Zepto", "Gainsight", "CRED", "Swiggy", "Tesco", "Cisco", "Arctic Wolf",
+                       "Atlassian", "Okta", "Salesforce", "Adobe"}
 
 
 def test_every_requested_company_is_present():
@@ -47,7 +49,7 @@ def test_pay_ranges_are_ordered_and_sourced():
         if r["pay_min"] or r["pay_max"]:
             assert r["pay_min"] and r["pay_max"], r["role_title"]
             assert float(r["pay_min"]) <= float(r["pay_max"]), r["role_title"]
-            assert r["currency"] in {"USD", "EUR", "INR"}, r["role_title"]
+            assert r["currency"] in {"USD", "EUR", "INR", "CAD"}, r["role_title"]
             assert r["pay_period"] == "year", r["role_title"]
             assert r["pay_source_url"].startswith("https://"), r["role_title"]
         else:
@@ -85,3 +87,7 @@ def test_staleness_check_flags_old_rows():
     old = analyze.stale_rows(POSTINGS, today=date(2028, 1, 1))
     assert len(old) == len(POSTINGS)
     assert analyze.stale_rows(POSTINGS, today=date(2026, 12, 1)) == []
+
+
+def test_tags_basis_is_declared():
+    assert all(r["tags_basis"] in {"full_text", "snippet"} for r in POSTINGS)

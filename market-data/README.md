@@ -1,6 +1,6 @@
 # market-data: what security roles ask for, and what they pay
 
-A small, dated dataset behind the front matter of the *Product Security Interview Playbook*. It covers 16 companies: Flipkart, Amazon, Stripe, eBay, Rippling, Sarvam AI, Anthropic, Coupang, Meesho, PhonePe, Walmart, Harness, Avalara, Meta, Circle and Wind River.
+A small, dated dataset behind the front matter of the *Product Security Interview Playbook*. It covers 29 companies: Flipkart, Amazon, Stripe, eBay, Rippling, Sarvam AI, Anthropic, Coupang, Meesho, PhonePe, Walmart, Harness, Avalara, Meta, Circle, Wind River, Razorpay, Slice, Zepto (India quick commerce), Gainsight, CRED, Swiggy, Tesco, Cisco, Arctic Wolf, Atlassian, Okta, Salesforce and Adobe. Google and Microsoft are not yet included.
 
 **Design rule: the book teaches skills that last; this folder holds the numbers that expire.** Every figure carries a source URL and the date it was seen. Pay is always a range, never a single promised number. The book quotes shares and ranks, not headline salaries, and links here for the dated detail.
 
@@ -24,7 +24,7 @@ python3 -m pytest -q                    # data checks
 
 ## Snapshot: 25 November 2026
 
-- 79 postings across all 16 companies.
+- 120 postings across 29 companies.
 - 20 postings published a pay range; 59 did not. All 20 are US or Ireland roles.
 - No India-based posting published pay. For INR, use the aggregates in `compensation.csv` and treat them as order of magnitude.
 - The skill mix that stands out: security architecture and design review dominates staff-and-above roles; cloud security and CI/CD and secure-SDLC dominate fintech and SaaS postings; AI and LLM security now appears in roughly one posting in five, and more often at the staff level.
@@ -39,7 +39,7 @@ python3 -m pytest -q                    # data checks
 
 ## Limits you should know about
 
-- **Skill tags come from the text that was visible when each posting was collected** (page excerpts and search snippets), not from a full read of every job description. Treat the shares as a directional signal and the ranks as more trustworthy than the exact percentages. A full-text pass is the first thing to do on the next refresh.
+- **Skill tags are mixed in quality.** The `tags_basis` column says `full_text` (19 postings, tagged from the fetched page) or `snippet` (101 postings, tagged from page excerpts and search snippets). The full-text pass is only partly done: some pages could not be fetched. Treat the shares as a directional signal and the ranks as more trustworthy than the exact percentages. Finishing the full-text pass is the first thing to do on the next refresh.
 - The sample is what public search surfaced on one day, not a census of each company's openings, and some companies are represented by only a few roles.
 - Postings close and move. Rows record that a role was public on the access date, nothing more.
 - Levels.fyi was not opened directly in this pass. The figures here are the aggregate numbers shown in its public search listings, attributed below.
