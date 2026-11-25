@@ -30,6 +30,9 @@ Suggested way to practise: read only the vulnerable file, write down every issue
 | SV-04 | Java | XML external entity (XXE) | CWE-611 | 2, 4 |
 | SV-05 | JavaScript | Prototype pollution in a deep merge | CWE-1321 | 2, 4 |
 | CR-01 | Python | Coding round, tier 1: brute-force login detector | none | 12 |
+| DS-01 to DS-08 | Python | Warm-ups in LeetCode and HackerEarth style: hash set, stack, string parsing, top K, intervals, sliding window, graph and cycles, binary search | none | 12 |
+
+See `coding_round/README.md` for the coding round material and `coding_round/platform_templates/` for judge-style input templates.
 
 ## Running
 
@@ -41,7 +44,7 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
 make test          # everything
-make test-python   # SV-01, SV-02, CR-01
+make test-python   # SV-01, SV-02, CR-01, DS-01 to DS-08
 make test-java     # SV-03, SV-04
 make test-js       # SV-05
 ```

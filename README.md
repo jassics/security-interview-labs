@@ -11,7 +11,7 @@ Every exercise has a vulnerable version, one fix, and a test that proves the exp
 
 | Folder | Contents | Status |
 | --- | --- | --- |
-| [`product-security/`](product-security) | Spot-the-vuln in Python, Java and JavaScript; coding round problems in tiers | Pilot: 6 exercises |
+| [`product-security/`](product-security) | Spot-the-vuln in Python, Java and JavaScript; coding round problems, including basic to medium warm-ups in the style of LeetCode and HackerEarth | Pilot: 6 spot-the-vuln and coding exercises, 8 warm-ups |
 | [`ai-security/`](ai-security) | Labs for LLM, agent, RAG and model supply chain security | Planned |
 
 This repository is the full collection. The companion books (Product Security Interview Playbook and AI Security Playbook) use a smaller, curated selection and point here for the rest.
@@ -42,3 +42,7 @@ The goal is to cover the kinds of questions that are publicly discussed for well
 - [security-study-plan](https://github.com/jassics/security-study-plan): domain-by-domain study checklists
 - [security-interview-questions](https://github.com/jassics/security-interview-questions): conceptual and scenario question banks
 - [python-for-cybersecurity](https://github.com/jassics/python-for-cybersecurity): Python learning resource for security
+
+## License
+
+[MIT](LICENSE). The exercises are intentionally vulnerable and come with no warranty; see [SECURITY.md](SECURITY.md).
