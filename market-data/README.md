@@ -39,7 +39,7 @@ python3 -m pytest -q                    # data checks
 
 ## Limits you should know about
 
-- **Skill tags are mixed in quality.** The `tags_basis` column says `full_text` (19 postings, tagged from the fetched page) or `snippet` (101 postings, tagged from page excerpts and search snippets). The full-text pass is only partly done: some pages could not be fetched. Treat the shares as a directional signal and the ranks as more trustworthy than the exact percentages. Finishing the full-text pass is the first thing to do on the next refresh.
+- **Skill tags are mixed in quality.** The `tags_basis` column says `full_text` (64 postings, tagged from the fetched page) or `snippet` (56 postings, tagged from page excerpts and search snippets). The remaining 56 could not be fetched in full (dead or redirected pages, blocked job boards). Treat the shares as a directional signal and the ranks as more trustworthy than the exact percentages. Finishing the full-text pass is the first thing to do on the next refresh.
 - The sample is what public search surfaced on one day, not a census of each company's openings, and some companies are represented by only a few roles.
 - Postings close and move. Rows record that a role was public on the access date, nothing more.
 - Levels.fyi was not opened directly in this pass. The figures here are the aggregate numbers shown in its public search listings, attributed below.
