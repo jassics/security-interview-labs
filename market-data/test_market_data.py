@@ -19,7 +19,7 @@ FAMILIES = {"product_security", "cloud_infra_security", "detection_response", "s
 REQUESTED_COMPANIES = {"Flipkart", "Amazon", "Stripe", "eBay", "Rippling", "Sarvam AI", "Anthropic", "Coupang",
                        "Meesho", "PhonePe", "Walmart", "Harness", "Avalara", "Meta", "Circle", "Wind River",
                        "Razorpay", "Slice", "Zepto", "Gainsight", "CRED", "Swiggy", "Tesco", "Cisco", "Arctic Wolf",
-                       "Atlassian", "Okta", "Salesforce", "Adobe"}
+                       "Atlassian", "Okta", "Salesforce", "Adobe", "Google", "Microsoft"}
 
 
 def test_every_requested_company_is_present():
