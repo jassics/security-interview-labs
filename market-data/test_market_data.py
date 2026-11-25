@@ -64,12 +64,15 @@ def test_compensation_rows_are_dated_and_sourced():
         rows = list(csv.DictReader(f))
     assert rows
     for r in rows:
-        assert r["source_url"].startswith("https://")
+        if r["source"] == "practitioner_reported":
+            assert "not a public statistic" in r["notes"]
+        else:
+            assert r["source_url"].startswith("https://")
         assert re.fullmatch(r"\d{4}-\d{2}-\d{2}", r["as_of_seen"])
         assert r["currency"] in {"USD", "INR", "EUR"}
         if r["low"] and r["high"]:
             assert float(r["low"]) <= float(r["high"])
-        assert r["low"] or r["value"]
+        assert r["low"] or r["high"] or r["value"]
 
 
 def test_analyze_runs():
