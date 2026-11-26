@@ -3,7 +3,7 @@
 test: test-python test-java test-js
 
 test-python:
-	python3 -m pytest spot_the_vuln/python coding_round -q
+	python3 -m pytest spot_the_vuln/python config_review coding_round -q
 
 test-java:
 	@set -e; for d in spot_the_vuln/java/*/; do \

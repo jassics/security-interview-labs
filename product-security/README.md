@@ -29,10 +29,14 @@ Suggested way to practise: read only the vulnerable file, write down every issue
 | SV-03 | Java | Path traversal in a file download | CWE-22 | 2, 3, 4 |
 | SV-04 | Java | XML external entity (XXE) | CWE-611 | 2, 4 |
 | SV-05 | JavaScript | Prototype pollution in a deep merge | CWE-1321 | 2, 4 |
+| SV-06 | Python | Broken object-level authorization and mass assignment | CWE-639, CWE-915 | 3 |
+| CF-01 | Python | Build an IAM policy linter | none | 5 |
+| CF-02 | Python | Build a Kubernetes pod spec linter | none | 6 |
+| CF-03 | Python | Build a CI workflow auditor | none | 7 |
 | CR-01 | Python | Coding round, tier 1: brute-force login detector | none | 12 |
 | DS-01 to DS-08 | Python | Warm-ups in LeetCode and HackerEarth style: hash set, stack, string parsing, top K, intervals, sliding window, graph and cycles, binary search | none | 12 |
 
-See `coding_round/README.md` for the coding round material and `coding_round/platform_templates/` for judge-style input templates.
+See `config_review/README.md` for CF-01 to CF-03. See `coding_round/README.md` for the coding round material and `coding_round/platform_templates/` for judge-style input templates.
 
 ## Running
 
@@ -44,7 +48,7 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
 make test          # everything
-make test-python   # SV-01, SV-02, CR-01, DS-01 to DS-08
+make test-python   # SV-01, SV-02, SV-06, CF-01 to CF-03, CR-01, DS-01 to DS-08
 make test-java     # SV-03, SV-04
 make test-js       # SV-05
 ```
