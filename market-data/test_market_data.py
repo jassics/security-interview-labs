@@ -22,7 +22,8 @@ REQUESTED_COMPANIES = {"Flipkart", "Amazon", "Stripe", "eBay", "Rippling", "Sarv
                        "Atlassian", "Okta", "Salesforce", "Adobe", "Google", "Microsoft",
                        "Navi", "Cohesity", "Rubrik", "Groww", "Commvault", "Druva", "Veeam", "Nutanix",
                        "Pure Storage", "NetApp", "Paytm", "Juspay", "Cashfree", "Fam", "Zerodha Fund House",
-                       "KreditBee", "Zeta", "CoinSwitch", "Upstox", "Fi", "Tazapay", "MoonPay"}
+                       "KreditBee", "Zeta", "CoinSwitch", "Upstox", "Fi", "Tazapay", "MoonPay",
+                       "OpenAI", "Databricks", "Perplexity", "Google DeepMind", "Cohere"}
 
 
 def test_every_requested_company_is_present():

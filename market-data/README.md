@@ -24,8 +24,8 @@ python3 -m pytest -q                    # data checks
 
 ## Snapshot: 25 and 26 November 2026
 
-- 178 postings across 53 companies (71 tagged from full posting text, 107 from page excerpts; 70 from employer pages, 108 from job-board copies).
-- 29 postings published a pay range; 149 did not. All 29 are US, Canada or Ireland roles.
+- 195 postings across 58 companies (71 tagged from full posting text, 124 from page excerpts; 83 from employer pages, 112 from job-board copies).
+- 34 postings published a pay range; 161 did not. All 34 are US, Canada or Ireland roles.
 - No India-based posting published pay. For INR, use the aggregates in `compensation.csv` and treat them as order of magnitude.
 - The skill mix that stands out: security architecture and design review dominates staff-and-above roles; cloud security and CI/CD and secure-SDLC dominate fintech and SaaS postings; AI and LLM security appears in roughly one posting in five, and more often at the staff level.
 
@@ -61,3 +61,5 @@ Levels.fyi figures are credited to Levels.fyi (https://www.levels.fyi) and used 
 ## Archetype mapping notes
 
 Data-protection and backup vendors (Cohesity, Rubrik, Druva, Veeam, Commvault) are filed under `saas_devtools` because they ship cloud-delivered products. Storage and hyper-converged infrastructure vendors (Nutanix, Pure Storage, NetApp) are filed under `embedded_infra` with Wind River. Indian fintech and neobank names (Navi, Groww, Paytm and others) are filed under `fintech_payments`. Veeam rows include Securiti, which is now part of Veeam. Pay shown only on job aggregators (for example Cohesity and Veeam US ranges) is not recorded; only employer-published ranges are.
+
+AI labs and AI-first companies (added 26 November 2026): OpenAI, Google DeepMind, Perplexity, Cohere and Databricks are mapped to the `ai_lab` archetype. Databricks is included for its Bengaluru product-security and incident-response postings. Postings read from page excerpts only are tagged `snippet`.
