@@ -24,8 +24,8 @@ python3 -m pytest -q                    # data checks
 
 ## Snapshot: 25 and 26 November 2026
 
-- 195 postings across 58 companies (71 tagged from full posting text, 124 from page excerpts; 83 from employer pages, 112 from job-board copies).
-- 34 postings published a pay range; 161 did not. All 34 are US, Canada or Ireland roles.
+- 193 postings across 58 companies (71 tagged from full posting text, 122 from page excerpts; 81 from employer pages, 112 from job-board copies). One duplicate Google posting and one duplicate Walmart requisition were removed on 26 November; some Cohere and Databricks postings were closed or unverifiable when checked (see the note column).
+- 39 postings published a pay range; 154 did not. All 39 are US, Canada or Ireland roles.
 - No India-based posting published pay. For INR, use the aggregates in `compensation.csv` and treat them as order of magnitude.
 - The skill mix that stands out: security architecture and design review dominates staff-and-above roles; cloud security and CI/CD and secure-SDLC dominate fintech and SaaS postings; AI and LLM security appears in roughly one posting in five, and more often at the staff level.
 
