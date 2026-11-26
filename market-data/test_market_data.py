@@ -19,7 +19,10 @@ FAMILIES = {"product_security", "cloud_infra_security", "detection_response", "s
 REQUESTED_COMPANIES = {"Flipkart", "Amazon", "Stripe", "eBay", "Rippling", "Sarvam AI", "Anthropic", "Coupang",
                        "Meesho", "PhonePe", "Walmart", "Harness", "Avalara", "Meta", "Circle", "Wind River",
                        "Razorpay", "Slice", "Zepto", "Gainsight", "CRED", "Swiggy", "Tesco", "Cisco", "Arctic Wolf",
-                       "Atlassian", "Okta", "Salesforce", "Adobe", "Google", "Microsoft"}
+                       "Atlassian", "Okta", "Salesforce", "Adobe", "Google", "Microsoft",
+                       "Navi", "Cohesity", "Rubrik", "Groww", "Commvault", "Druva", "Veeam", "Nutanix",
+                       "Pure Storage", "NetApp", "Paytm", "Juspay", "Cashfree", "Fam", "Zerodha Fund House",
+                       "KreditBee", "Zeta", "CoinSwitch", "Upstox", "Fi", "Tazapay", "MoonPay"}
 
 
 def test_every_requested_company_is_present():

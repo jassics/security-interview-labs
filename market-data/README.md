@@ -1,6 +1,6 @@
 # market-data: what security roles ask for, and what they pay
 
-A small, dated dataset behind the front matter of the *Product Security Interview Playbook*. It covers 31 companies: Flipkart, Amazon, Stripe, eBay, Rippling, Sarvam AI, Anthropic, Coupang, Meesho, PhonePe, Walmart, Harness, Avalara, Meta, Circle, Wind River, Razorpay, Slice, Zepto (India quick commerce), Gainsight, CRED, Swiggy, Tesco, Cisco, Arctic Wolf, Atlassian, Okta, Salesforce, Adobe, Google and Microsoft.
+A small, dated dataset behind the front matter of the *Product Security Interview Playbook*. It covers 53 companies: Flipkart, Amazon, Stripe, eBay, Rippling, Sarvam AI, Anthropic, Coupang, Meesho, PhonePe, Walmart, Harness, Avalara, Meta, Circle, Wind River, Razorpay, Slice, Zepto (India quick commerce), Gainsight, CRED, Swiggy, Tesco, Cisco, Arctic Wolf, Atlassian, Okta, Salesforce, Adobe, Google, Microsoft, Navi, Cohesity, Rubrik, Groww, Commvault, Druva, Veeam (including Securiti), Nutanix, Pure Storage, NetApp, Paytm, Juspay, Cashfree, Fam, Zerodha Fund House, KreditBee, Zeta, CoinSwitch, Upstox, Fi, Tazapay and MoonPay.
 
 **Design rule: the book teaches skills that last; this folder holds the numbers that expire.** Every figure carries a source URL and the date it was seen. Pay is always a range, never a single promised number. The book quotes shares and ranks, not headline salaries, and links here for the dated detail.
 
@@ -22,12 +22,12 @@ python3 analyze.py --family product_security --markdown
 python3 -m pytest -q                    # data checks
 ```
 
-## Snapshot: 25 November 2026
+## Snapshot: 25 and 26 November 2026
 
-- 131 postings across 31 companies.
-- 20 postings published a pay range; 59 did not. All 20 are US or Ireland roles.
+- 178 postings across 53 companies (71 tagged from full posting text, 107 from page excerpts; 70 from employer pages, 108 from job-board copies).
+- 29 postings published a pay range; 149 did not. All 29 are US, Canada or Ireland roles.
 - No India-based posting published pay. For INR, use the aggregates in `compensation.csv` and treat them as order of magnitude.
-- The skill mix that stands out: security architecture and design review dominates staff-and-above roles; cloud security and CI/CD and secure-SDLC dominate fintech and SaaS postings; AI and LLM security now appears in roughly one posting in five, and more often at the staff level.
+- The skill mix that stands out: security architecture and design review dominates staff-and-above roles; cloud security and CI/CD and secure-SDLC dominate fintech and SaaS postings; AI and LLM security appears in roughly one posting in five, and more often at the staff level.
 
 ## How to read the numbers
 
@@ -56,3 +56,8 @@ python3 -m pytest -q                    # data checks
 ## Attribution and takedown
 
 Levels.fyi figures are credited to Levels.fyi (https://www.levels.fyi) and used here as a few aggregate numbers for context. Payscale and Salary.com figures are credited to those sites. Job posting text is not copied; the dataset stores titles, links and tags only. If a company or site would like a row changed or removed, open an issue and it will be removed.
+
+
+## Archetype mapping notes
+
+Data-protection and backup vendors (Cohesity, Rubrik, Druva, Veeam, Commvault) are filed under `saas_devtools` because they ship cloud-delivered products. Storage and hyper-converged infrastructure vendors (Nutanix, Pure Storage, NetApp) are filed under `embedded_infra` with Wind River. Indian fintech and neobank names (Navi, Groww, Paytm and others) are filed under `fintech_payments`. Veeam rows include Securiti, which is now part of Veeam. Pay shown only on job aggregators (for example Cohesity and Veeam US ranges) is not recorded; only employer-published ranges are.
